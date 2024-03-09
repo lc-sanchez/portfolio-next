@@ -2,6 +2,7 @@
 import React from 'react'
 import Image from 'next/image'
 import { TypeAnimation } from 'react-type-animation'
+import Link from 'next/link'
 
 export const HeroSection = () => {
   return (
@@ -30,8 +31,10 @@ export const HeroSection = () => {
                 </h1>
                 <p className='text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl font-mono'>Una pequeña área para poder presentar los proyectos y conocimientos que me embarqué hasta ahora. Let's go! </p>
                 <div>
-                    <button className='px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-gradient-to-br hover:from-pink-500 hover:via-purple-500 hover:to-blue-500 text-white font-mono'>
-                        Contáctame
+                    <button className='px-6 py-3 w-full 
+                    sm:w-fit rounded-full mr-4 
+                    bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-gradient-to-br hover:from-pink-500 hover:via-purple-500 hover:to-blue-500 text-white font-mono'>
+                        <Link href="#contactame">Contáctame</Link>
                     </button>
                     <button className='px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 hover:bg-gradient-to-br  hover:from-pink-500 hover:via-purple-500 hover:to-blue-500 text-white mt-3'>
                         <span className='block hover:bg-slate-900 rounded-full px-5 py-2 font-mono' style={{

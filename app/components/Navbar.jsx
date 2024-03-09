@@ -6,7 +6,7 @@ import MenuOverlay from './MenuOverlay'
 
 const navLinks=[
     {
-        title:"About",
+        title:"Sobre mi",
         path:"#about",
     },
     {
@@ -14,8 +14,8 @@ const navLinks=[
         path:"#proyectos",
     },
     {
-        title:"Contacto",
-        path:"#contacto",
+        title:"Redes",
+        path:"#contactame",
     }
 ]
 

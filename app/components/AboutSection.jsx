@@ -75,7 +75,7 @@ export const AboutSection = () => {
     
     
     return (
-    <section className='text-white'>
+    <section className='text-white' id="about">
     <div className='md:grid md:grid-cols-2 gap-8 items-center py-10 px-2
     xl:gap-16 sm:py-16 xl:px-16'>
         <Image className='rounded-lg shadow-[0_0_25px_#4338ca]' src='/images/desk.jpg' 

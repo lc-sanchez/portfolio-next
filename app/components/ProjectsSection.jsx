@@ -58,7 +58,7 @@ const projectsData = [
         title: "Sopa de Letras",
         description: "Proyecto Organización del Computador I. Realización de un juego utilizando Assembler con Emu8086.",
         image: "/images/projects/sopa2.jpg",
-        tag: ["All", "Assembler","Escritorio","Emu8086"],
+        tag: ["All", "Assembler","Otros","Emu8086","Escritorio"],
         gitUrl:"https://github.com/lc-sanchez/Sopa-de-letras",
     },
     {
@@ -66,7 +66,7 @@ const projectsData = [
         title: "SIMD",
         description: "Proyecto Organización del Computador II. Utilización de lenguaje C y NASM para el análisis de la velocidad en el procesamiento de imagenes.",
         image: "/images/projects/SIMD.jpg",
-        tag: ["All", "C","Escritorio","NASM","Assembler"],
+        tag: ["All", "C","Otros","NASM","Assembler","Escritorio"],
         gitUrl:"https://github.com/lc-sanchez/SIMD",
     },
     {
@@ -74,7 +74,7 @@ const projectsData = [
         title: "Base de datos",
         description: "Proyecto Base de Datos I. Implementación de base de datos para almacenamiento de tarjetas de crédito. Se utilizó Go.",
         image: "/images/projects/BDD1.jpg",
-        tag: ["All", "Go","Escritorio","PostgreSQL"],
+        tag: ["All", "Go","Otros","PostgreSQL","Escritorio"],
         gitUrl:"https://github.com/lc-sanchez/TP-Base-de-Datos",
     },
     {
@@ -82,7 +82,7 @@ const projectsData = [
         title: "Driver",
         description: "Proyecto Organización del Computador II. Implementación de un módulo mediante comandos de linux y código C.",
         image: "/images/projects/driver.png",
-        tag: ["All", "C","Escritorio","Linux"],
+        tag: ["All", "C","Otros","Linux","Escritorio"],
         gitUrl:"https://github.com/lc-sanchez/Driver",
     },
 
@@ -94,20 +94,31 @@ export const ProjectsSection = () => {
     const handleTagChange = (newTag) => {
         setTag(newTag);
     };
+
+    const projectosFiltrados = projectsData.filter((project) => 
+        project.tag.includes(tag)
+    );
     
   return (
-    <>
+    <section id="proyectos">
     <h2 className='text-center text-4xl font-bold font-mono
-     text-white mt-4 mb-4 md:mb-10'>
+     text-white mt-4 mb-4 md:mb-10' >
         Mis Projectos
     </h2>
     <div className='text-white flex flex-row justify-center items-center gap-2 py-4'>
-
+        <ProjectTag onClick={handleTagChange} 
+        name="All" isSelected={tag === "All"}/>
+        <ProjectTag onClick={handleTagChange} 
+        name="Web" isSelected={tag === "Web"}/>
+        <ProjectTag onClick={handleTagChange} 
+        name="Escritorio" isSelected={tag === "Escritorio"}/>
+        <ProjectTag onClick={handleTagChange} 
+        name="Otros" isSelected={tag === "Otros"}/>
     </div>
     <ul className='font-mono grid 
     md:grid-cols-3 gap-8 md:gap-12'>
         {
-            projectsData.map((project) => 
+            projectosFiltrados.map((project) => 
             <ProjectCard 
             key={project.id}
             title={project.title}
@@ -117,6 +128,6 @@ export const ProjectsSection = () => {
             />)
         }
     </ul>
-    </>
+    </section>
   )
 }

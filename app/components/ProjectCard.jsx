@@ -10,7 +10,7 @@ export const ProjectCard = ({imgUrl, title, description, gitUrl}) => {
             <div className='overlay absolute rounded-t-xl
             top-0 left-0 w-full h-full bg-[#181818] bg-opacity-0
             hidden group-hover:flex group-hover:bg-opacity-80
-            transition-all flex items-center justify-center'>
+            transition-all items-center justify-center'>
               <Link href={gitUrl} className='h-14 w-14 border-2 relative 
               rounded-full border-[#ADB7BE] hover:border-white group/link'>
                 <CodeBracketIcon className='h-10 w-10 
@@ -27,7 +27,7 @@ export const ProjectCard = ({imgUrl, title, description, gitUrl}) => {
   */}
             </div>
         </div>
-        <div className='rounded-b-xl bg-[#181818] py-6 px-4 mt-1 md:min-h-[24rem]'>
+        <div className='rounded-b-xl bg-[#181818] py-6 px-4 mt-1 md:min-h-[16rem]'>
             <h5 className='text-white  text-xl font-semibold mb-2'>{title}</h5>
             <p className='text-[#ADB7BE]'>{description}</p>
         </div>
