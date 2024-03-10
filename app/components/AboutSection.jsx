@@ -21,7 +21,7 @@ const TAB_DATA=[
         title:"Technical Skills",
         id:"technicalskills",
         content: (
-            <ul className='grid grid-cols-2 list-disc pl-2 text-sm'>
+            <ul className='grid grid-cols-2 gap-1 list-disc pl-2 text-sm'>
                 <li>Java</li>
                 <li>Python</li>
                 <li>Maven</li>
