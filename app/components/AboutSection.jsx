@@ -8,10 +8,12 @@ const TAB_DATA=[
         title:"Soft Skills",
         id:"softskills",
         content: (
-            <ul className='list-disc pl-2 text-sm'>
+            <ul className='list-disc pl-2 text-sm grid grid-cols-2 gap-1'>
                 <li>Responsabilidad</li>
                 <li>Comunicación</li>
-                <li>Completar...</li>
+                <li>Resolución de problemas</li>
+                <li>Trabajo en equipo</li>
+                <li>Capacidad de adaptación</li>
             </ul>
         )
     },
@@ -25,9 +27,10 @@ const TAB_DATA=[
                 <li>Maven</li>
                 <li>PostgreSQL</li>
                 <li>Material UI</li>
-                <li>React</li>
-                <li>HTML/CSS</li>
                 <li>Analisis de datos</li>
+                <li>Metodologías Ágiles</li>
+                <li>Testing</li>
+                <li>Análisis de requerimientos</li>
             </ul>
         )
     },
@@ -35,10 +38,10 @@ const TAB_DATA=[
         title:"Educación",
         id:"educacion",
         content: (
-            <ul className='list-disc pl-2 text-sm'>
-                <li className='mb-2'>Bachiller Ciencias Naturales, Colegio Parroquial de los Polvorines</li>
-                <li className='mb-2'>Técnicatura en Informática, Universidad Nacional General Sarmiento</li>
-                <li className='mb-2 font-bold'>Licenciatura en sistemas, Universidad Nacional General Sarmiento
+            <ul className='list-disc pl-2 text-sm grid grid-cols-1 gap-1'>
+                <li className=''>Bachiller Ciencias Naturales, Colegio Parroquial de los Polvorines</li>
+                <li className=''>Técnicatura en Informática, Universidad Nacional de General Sarmiento</li>
+                <li className=' font-bold'>Licenciatura en Sistemas, Universidad Nacional de General Sarmiento
                 <span className='text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-500  to-pink-600'> (En curso)</span></li>
             </ul>
         )
@@ -84,7 +87,7 @@ export const AboutSection = () => {
         <div className='mt-8 md:mt-0 text-left flex flex-col h-full'>
             <h2 className='text-2xl font-bold text-white my-4  font-mono'>Sobre mí</h2>
             <p className='text-base lg:text-lg font-mono'>
-                Soy una estudiante de sistemas, fanática del café y de aprender nuevas cosas. He trabajado con herramientas como Java, Python, React, MaterialUI, PostgreSQL, HTML, CSS y Git. Me adaptó rápidamente a los cambios en el entorno y busco aprender de los desafíos que se me plantean en el camino. Me encanta trabajar con equipos que persiguen un mismo objetivo. 
+                Soy una estudiante de sistemas, fanática del café y de aprender nuevas cosas. He trabajado con herramientas como Java, Python, React, MaterialUI, PostgreSQL, HTML, CSS y Git. Me adapto rápidamente a los cambios en el entorno y busco aprender de los desafíos que se me plantean en el camino. Me encanta trabajar con equipos que persiguen un mismo objetivo. 
             </p>
             <div className='flex flex-row justify-start mt-8'>
                 <TabButton
@@ -104,7 +107,7 @@ export const AboutSection = () => {
                     {" "}Experiencia{" "}
                 </TabButton>
             </div>
-            <div className='mt-4 font-mono overflow-y-auto min-h-[150px]'>
+            <div className='mt-4 font-mono min-h-[150px]'>
             {TAB_DATA.find((t)=> t.id === tab).content}
             </div>
         </div>
