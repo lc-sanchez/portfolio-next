@@ -8,7 +8,7 @@ const TAB_DATA=[
         title:"Soft Skills",
         id:"softskills",
         content: (
-            <ul className='list-disc pl-2 text-sm grid grid-cols-2 gap-1'>
+            <ul className='list-disc pl-2 text-sm grid gap-2 md:grid-cols-2 md:gap-1'>
                 <li>Responsabilidad</li>
                 <li>Comunicación</li>
                 <li>Resolución de problemas</li>
@@ -21,7 +21,7 @@ const TAB_DATA=[
         title:"Technical Skills",
         id:"technicalskills",
         content: (
-            <ul className='grid grid-cols-2 gap-1 list-disc pl-2 text-sm'>
+            <ul className='grid md:grid-cols-2 gap-2 md:gap-1 list-disc pl-2 text-sm'>
                 <li>Java</li>
                 <li>Python</li>
                 <li>Maven</li>
@@ -38,7 +38,7 @@ const TAB_DATA=[
         title:"Educación",
         id:"educacion",
         content: (
-            <ul className='list-disc pl-2 text-sm grid grid-cols-1 gap-1'>
+            <ul className='list-disc pl-2 text-sm grid grid-cols-1 gap-2 md:gap-1'>
                 <li className=''>Bachiller Ciencias Naturales, Colegio Parroquial de los Polvorines</li>
                 <li className=''>Técnicatura en Informática, Universidad Nacional de General Sarmiento</li>
                 <li className=' font-bold'>Licenciatura en Sistemas, Universidad Nacional de General Sarmiento
