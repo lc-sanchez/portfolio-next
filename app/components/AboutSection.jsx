@@ -87,7 +87,10 @@ export const AboutSection = () => {
         <div className='mt-8 md:mt-0 text-left flex flex-col h-full'>
             <h2 className='text-2xl font-bold text-white my-4  font-mono'>Sobre mí</h2>
             <p className='text-base lg:text-lg font-mono'>
-                Soy una estudiante de sistemas, fanática del café y de aprender nuevas cosas. He trabajado con herramientas como Java, Python, React, MaterialUI, PostgreSQL, HTML, CSS y Git. Me adapto rápidamente a los cambios en el entorno y busco aprender de los desafíos que se me plantean en el camino. Me encanta trabajar con equipos que persiguen un mismo objetivo. 
+                Soy una estudiante de sistemas, fanática del café y de aprender nuevas cosas. 
+                He trabajado con herramientas como Java, Python, MaterialUI, PostgreSQL, Git aplicando metodologías ágiles y de gestión de proyectos. 
+                Me adapto rápidamente a los cambios en el entorno y busco aprender de los desafíos que se me plantean en el camino. 
+                Me encanta trabajar con equipos que persiguen un mismo objetivo. 
             </p>
             <div className='flex flex-row justify-start mt-8'>
                 <TabButton
