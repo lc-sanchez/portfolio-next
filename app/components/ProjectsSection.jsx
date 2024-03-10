@@ -103,7 +103,7 @@ export const ProjectsSection = () => {
     <section id="proyectos">
     <h2 className='text-center text-4xl font-bold font-mono
      text-white mt-4 mb-4 md:mb-10' >
-        Mis Projectos
+        Mis Proyectos
     </h2>
     <div className='text-white flex flex-row justify-center items-center gap-2 py-4'>
         <ProjectTag onClick={handleTagChange} 
