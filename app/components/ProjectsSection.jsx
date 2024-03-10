@@ -98,14 +98,14 @@ export const ProjectsSection = () => {
     const projectosFiltrados = projectsData.filter((project) => 
         project.tag.includes(tag)
     );
-    
+    //flex flex-row justify-center items-center
   return (
     <section id="proyectos">
     <h2 className='text-center text-4xl font-bold font-mono
      text-white mt-4 mb-4 md:mb-10' >
         Mis Proyectos
     </h2>
-    <div className='text-white flex flex-row justify-center items-center gap-2 py-4'>
+    <div className='text-white grid grid-rows-1 md:flex md:flex-row md:justify-center md:items-center gap-2 py-4'>
         <ProjectTag onClick={handleTagChange} 
         name="All" isSelected={tag === "All"}/>
         <ProjectTag onClick={handleTagChange} 
