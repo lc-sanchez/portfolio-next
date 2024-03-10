@@ -76,7 +76,7 @@ export const AboutSection = () => {
         });
     }
     
-    
+    //flex flex-row justify-start mt-8 
     return (
     <section className='text-white' id="about">
     <div className='md:grid md:grid-cols-2 gap-8 items-center py-10 px-2
@@ -92,7 +92,7 @@ export const AboutSection = () => {
                 Me adapto rápidamente a los cambios en el entorno y busco aprender de los desafíos que se me plantean en el camino. 
                 Me encanta trabajar con equipos que persiguen un mismo objetivo. 
             </p>
-            <div className='flex flex-row justify-start mt-8'>
+            <div className='mt-8 grid grid-cols-1 gap-3 md:flex md:flex-row md:justify-start'>
                 <TabButton
                     selectTab={()=> handleTabChange("softskills")} active={tab === "softskills"}>
                     {" "}Soft Skills{" "}
